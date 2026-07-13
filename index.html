@@ -215,6 +215,12 @@
   .pill-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
   .pill{background:var(--paper); border:1px solid var(--border); border-radius:12px; padding:10px 16px; font-size:13px; color:var(--ink); font-weight:400; box-shadow:var(--shadow)}
   .pill b{color:var(--azul)}
+  .fuentes-list{list-style:none; margin-top:18px}
+  .fuentes-list li{padding:10px 0 10px 24px; position:relative; border-bottom:1px solid rgba(46,111,176,0.08); font-size:13px; color:var(--muted)}
+  .fuentes-list li::before{content:'↗'; position:absolute; left:2px; color:var(--azul); font-size:12px}
+  .fuentes-list a{color:var(--azul); text-decoration:none; word-break:break-all; font-size:12px}
+  .fuentes-list a:hover{text-decoration:underline}
+  .fuentes-list b{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -276,7 +282,7 @@
       </div>
     </div>
     <div class="pill-row" style="margin-top:12px">
-      <div class="pill">El premio: mercado de cuidado personal MX de <b>$11 mil M USD</b> → <b>$22 mil M</b> a 2031</div>
+      <div class="pill">El premio: belleza y cuidado personal MX vale <b>$17.6 mil M USD</b> → <b>$22.5 mil M</b> a 2031</div>
       <div class="pill">Jabones ≈ <b>9%</b> de la categoría</div>
       <div class="pill" style="font-size:11px">Fuentes: Mordor Intelligence, GlobalData</div>
     </div>
@@ -327,32 +333,30 @@
   <section class="slide" id="s-tiktok" data-nav="¿Por qué TikTok Shop?">
     <span class="eyebrow azul">Por qué TikTok Shop</span>
     <h2>La plataforma donde la gente <em>descubre y compra en el mismo lugar.</em></h2>
-    <p class="lead">Cuatro datos, con fuente, de por qué es el canal correcto para generar demanda demostrable:</p>
+    <p class="lead">La plataforma crece rápido (sus ventas diarias se multiplicaron 59 veces en su primer año en México) — pero lo importante no es cuánto crece la plataforma, sino <b>cómo cambia lo que la gente compra</b>. Cuatro datos de comportamiento, con fuente:</p>
     <div class="grid g2" style="margin-top:22px">
       <div class="card azul">
-        <div class="stat azul">59×</div>
-        <div class="stat-label">Crecieron las ventas diarias promedio en su <b>primer año en México</b> (feb 2025 – ene 2026)</div>
-        <p class="src" style="margin-top:8px">Fuente: TikTok Shop México / El Universal, feb 2026</p>
+        <div class="stat azul">58%</div>
+        <div class="stat-label">De los usuarios <b>ha visitado una tienda física</b> solo por una recomendación que vio en un video de TikTok</div>
+        <p class="src" style="margin-top:8px">Fuente: The CIU / Ernesto Piedras, 2026 (ver Fuentes)</p>
       </div>
-      <div class="card azul">
-        <div class="stat azul">25×</div>
-        <div class="stat-label">Se multiplicaron los <b>vendedores activos</b> con ventas en el mismo periodo</div>
-        <p class="src" style="margin-top:8px">Fuente: TikTok Shop México, primer aniversario, feb 2026</p>
+      <div class="card verde">
+        <div class="stat verde">3 de 10</div>
+        <div class="stat-label">Usuarios de redes sociales en México <b>descubrieron un producto sin buscarlo</b> activamente</div>
+        <p class="src" style="margin-top:8px">Fuente: AMVO, Estudio Discovery Commerce México, 2026 (ver Fuentes)</p>
       </div>
       <div class="card verde">
         <div class="stat verde">#1</div>
-        <div class="stat-label"><b>Belleza y cuidado personal</b> es la categoría con más ventas de la plataforma (≈22% del total global)</div>
-        <p class="src" style="margin-top:8px">Fuente: datos de plataforma TikTok Shop, 2026</p>
+        <div class="stat-label"><b>Belleza y cuidado personal</b> es la categoría #1 en ventas de la plataforma (22.5% del total global)</div>
+        <p class="src" style="margin-top:8px">Fuente: datos globales TikTok Shop, 2026 (ver Fuentes)</p>
       </div>
       <div class="card terr">
         <div class="stat terr">85%</div>
-        <div class="stat-label">De las ventas de una marca mexicana de belleza vinieron de <b>creadores afiliados</b> — que cobran solo por venta</div>
-        <p class="src" style="margin-top:8px">Fuente: caso Beauty Creations MX, TikTok Shop, 2026</p>
+        <div class="stat-label">De las ventas de una marca mexicana vino de <b>creadores afiliados</b> — que cobran solo por venta</div>
+        <p class="src" style="margin-top:8px">Fuente: caso STF Tech, TikTok Shop MX (ver Fuentes)</p>
       </div>
     </div>
-    <div class="callout">
-      <p><span class="k">Y el dato que más le importa al retail:</span> cada jabón vendido ahí es prueba dura — "este producto ya rota X unidades por semana sin estar en una sola tienda".</p>
-    </div>
+
   </section>
 
   <!-- 5b · CÓMO LO HAREMOS -->
@@ -389,8 +393,41 @@
       </div>
     </div>
     <div class="callout">
-      <p><span class="k">Todo lo que este sistema genera</span> — ventas, reseñas, comunidad, videos — se documenta cada mes y alimenta la Carpeta de Evidencia con la que ustedes negocian.</p>
+      <p><span class="k">Y esto no es una promesa a futuro: el análisis ya lo corrimos</span> para la categoría de jabones en TikTok Shop México. Lo que encontramos, en la siguiente lámina →</p>
     </div>
+  </section>
+
+  <!-- 6b · ANÁLISIS YA HECHO -->
+  <section class="slide" id="s-analisis" data-nav="Lo que ya encontramos">
+    <span class="eyebrow azul">Análisis real · ~640 productos activos en TikTok Shop México</span>
+    <h2>Ya sabemos qué se vende, quién lo vende <em>y cómo lo venden.</em></h2>
+    <p class="lead">Con nuestra tecnología de análisis revisamos los jabones y geles que hoy venden en TikTok Shop México. Tres hallazgos que definen la jugada:</p>
+    <div class="grid g2" style="margin-top:22px">
+      <div class="card azul">
+        <span class="tag">Jabón de barra · la cancha de Día a Día</span>
+        <h3 style="margin-top:8px">El pack manda, y el precio deja hueco</h3>
+        <ul class="clean azul">
+          <li>La mitad de la barra se vende en <b>paquete</b>; el formato rey es de <b>5 piezas</b></li>
+          <li>Precio mediano de la categoría: <b>~$41 por pieza</b></li>
+          <li>Líder actual: <b>Natura Tododia</b> (cajas de 5 a $194–249, el doble del precio posible de Día a Día)</li>
+          <li>Recomendación: pack de 4–6 piezas, mensaje de rendimiento y precio justo</li>
+        </ul>
+      </div>
+      <div class="card verde">
+        <span class="tag ok">Gel y líquido · la cancha de EcoNutree</span>
+        <h3 style="margin-top:8px">Vende la función; el líder está lejos</h3>
+        <ul class="clean verde">
+          <li><b>14 de los 20 geles más vendidos son para acné</b> — nadie compra "jabón bonito", compran una solución</li>
+          <li>Ticket mediano de los que sí venden: <b>~$215</b> — el rango natural de EcoNutree</li>
+          <li>Dominan marcas <b>transfronterizas</b> (hasta 93 mil ventas) con envío de $59 y semanas de espera</li>
+          <li>Recomendación: EcoNutree líquido, con beneficio claro, hecho en México y envío rápido — y el formato coincide con lo que su propio sondeo detectó: la mayoría prefiere líquido/gel en premium</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">
+      <p><span class="k">Y el análisis no se queda en productos:</span> nos dice qué creadores ya venden estos jabones y qué videos generaron esas ventas — el <em>cómo lo venden</em>. Cada campaña de Día a Día y EcoNutree arranca copiando lo que ya funciona, no experimentando desde cero.</p>
+    </div>
+    <p class="src">Análisis HAUS · ~640 productos activos en TikTok Shop México (búsquedas "jabón" y "gel de baño"), julio 2026. Cifras de plataforma usadas como señal de mercado.</p>
   </section>
 
   <!-- 6 · INVESTIGACIÓN HONESTA (SLIDE CLAVE) -->
@@ -446,7 +483,7 @@
     </div>
     <div class="pill-row" style="margin-top:16px">
       <div class="pill">▶ <b>Demo en vivo</b> · carpeta de ejemplo, navegable desde el celular</div>
-      <div class="pill">Versión impresa entregada en esta reunión</div>
+      
     </div>
   </section>
   <!-- 10 · INVERSIÓN (resumen limpio) -->
@@ -495,16 +532,36 @@
   </section>
 
 
+
   <!-- 13 · CIERRE -->
   <section class="slide cover" id="s-cierre" data-nav="Cierre" style="min-height:52vh">
     <span class="kicker">Welcome to the HAUS</span>
     <h1>Nosotros construimos la demanda. <em>Ustedes cierran el anaquel.</em></h1>
-    <p class="sub">No prometemos ventas que no controlamos: prometemos demanda medible y un argumento cada mes más fuerte para sus negociaciones. Cuando toquen la puerta de una cadena, el jabón ya tendrá quien lo pida.</p>
+    <p class="sub">No prometemos ventas que no controlamos: prometemos posicionamiento de marcas y toma de decisiones basadas en datos — y un argumento cada mes más fuerte para sus negociaciones. Cuando toquen la puerta de una cadena, el jabón ya tendrá quien lo pida.</p>
     <div class="pill-row" style="justify-content:center; margin-top:18px">
       <div class="pill">¿Cómo arrancamos? · Aprobamos <b>Fase 1</b> esta semana</div>
-      <div class="pill">Primer contenido al aire en <b>15 días</b></div>
     </div>
     <div class="meta">HAUS MX</div>
+  </section>
+  <!-- FUENTES -->
+  <section class="slide" id="s-fuentes" data-nav="Fuentes">
+    <span class="eyebrow">Fuentes y referencias</span>
+    <h2>Todo lo que afirmamos, <em>con su fuente.</em></h2>
+    <ul class="fuentes-list">
+      <li><b>Crecimiento 59× de TikTok Shop México en su primer año</b> (feb 2025 – ene 2026) — El Universal, feb 2026.<br>
+      <a href="https://www.eluniversal.com.mx/cartera/tiktok-shop-gana-participacion-de-mercado-en-el-comercio-electronico-en-mexico-se-multiplica-numero-de-vendedores/" target="_blank">eluniversal.com.mx/cartera/tiktok-shop-gana-participacion-de-mercado…</a></li>
+      <li><b>25× vendedores activos y casos de éxito</b> (Beauty Creations: 500 creadores y 70% de ventas en vivo; STF Tech: 85% de ventas vía programa de afiliados) — Comunicado 1er aniversario TikTok Shop MX / Roastbrief, feb 2026.<br>
+      <a href="https://roastbrief.com.mx/2026/02/tiktok-shop-celebra-su-primer-aniversario-en-mexico-con-un-crecimiento-acelerado-de-25-veces-en-vendedores-activos/" target="_blank">roastbrief.com.mx/2026/02/tiktok-shop-celebra-su-primer-aniversario…</a></li>
+      <li><b>Influencia de TikTok en el consumo en México:</b> 58% ha visitado una tienda física por una recomendación en video (The CIU / Ernesto Piedras) y 3 de cada 10 usuarios descubrieron un producto sin buscarlo (AMVO, Estudio Discovery Commerce) — El Cronista, may 2026.<br>
+      <a href="https://www.cronista.com/mexico/finanzas-economia/tiktok-va-por-el-hot-sale-en-mexico-54-de-las-pymes-ya-los-ve-como-un-motor-clave-para-sus-ventas/" target="_blank">cronista.com/mexico/finanzas-economia/tiktok-va-por-el-hot-sale-en-mexico…</a></li>
+      <li><b>Belleza y cuidado personal = 22.5% del GMV global de TikTok Shop</b> (categoría #1) — TikTok Shop Academia con datos de plataforma, 2026.<br>
+      <a href="https://tiktokshopacademy.co/blog/productos-mas-vendidos-tiktok-shop-2026" target="_blank">tiktokshopacademy.co/blog/productos-mas-vendidos-tiktok-shop-2026</a></li>
+      <li><b>Mercado de belleza y cuidado personal en México: USD 17.6 mil M (2026) → USD 22.5 mil M (2031)</b> — Mordor Intelligence, ene 2026.<br>
+      <a href="https://www.mordorintelligence.com/industry-reports/mexico-beauty-and-personal-care-market-industry" target="_blank">mordorintelligence.com/industry-reports/mexico-beauty-and-personal-care…</a></li>
+      <li><b>Participación de jabones dentro de la categoría (≈9%)</b> — GlobalData, reporte de categoría (acceso de pago; disponible bajo solicitud).</li>
+      <li><b>Análisis de ~640 productos de jabón y gel activos en TikTok Shop México</b> — elaboración propia HAUS con tecnología de análisis de plataforma, julio 2026. Cifras usadas como señal de mercado, no como registro contable.</li>
+      <li><b>Sondeo inicial de mercado (n=170, Toluca–Metepec)</b> — HAUS MX, feb–mar 2026. Resultados completos en enlace privado.</li>
+    </ul>
   </section>
 
   <div class="foot">HAUS MX · Propuesta de Posicionamiento y Demanda · Día a Día &amp; EcoNutree · Documento editable · Julio 2026</div>
